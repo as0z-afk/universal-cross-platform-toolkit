@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+state/
+managed/
+.DS_Store
+Thumbs.db
+*.tmp
+
+build/
+dist/
+*.egg-info/

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-cross-platform-toolkit"
+version = "0.1.0"
+description = "Offline-first portable toolkit with reversible, hash-pinned managed updates"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+dependencies = []
+
+[project.scripts]
+ubtoolkit = "ubtoolkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ubtoolkit*"]
+
+[tool.setuptools.package-data]
+ubtoolkit = ["data/*.json"]
